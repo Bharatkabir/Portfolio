@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 4pc;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .button_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+  }
+  
+  .description,
+  .link {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 35px;
+  }
+  #btn:hover{
+    color: #000;
+  }
+  #btn {
+    margin-top: 2pc;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    /* font-size: 15px; */
+    background-color: #222;
+    padding: 10px 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #btn:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #78c7d2;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  #btn:hover:after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+  
+  .link {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .link a {
+    color: #000;
+    font-size: 25px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .card {
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px rgba(211, 211, 0.486) solid;
+    margin: 10px;
+    transition: 0.6s;
+    width: 30%;
+  }
+  
+  .card:hover {
+    transition: 0.6s;
+    box-shadow: 5px 5px 20px lightgray;
+  }
+  
+  .card img {
+    transition: 0.2s;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 2px;
+  }
+  
+  .card:hover img {
+    transition: 0.2s;
+    outline: 4px solid lightblue;
+  }
+  
+  .card p {
+    color: gray;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
