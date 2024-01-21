@@ -57,7 +57,7 @@
                     <div class="text">I'm Bharat Bhushan and I'm a <span class="-2">Full Stack Developer</span></div>
                     <p>
                         Hello, I'm Bharat Bhushan, a passionate full-stack developer skilled in HTML, CSS, AngularJS, React.js, Node.js, .NET Core, SQL, and MongoDB. I specialize in crafting visually appealing and intuitive web applications for seamless user experiences. My expertise spans frontend development with HTML, CSS, and JavaScript frameworks like AngularJS and React.js, while on the backend, I architect robust solutions using .NET Core, Node.js, SQL, and MongoDB. I'm committed to staying updated with the latest technologies to deliver cutting-edge web solutions</p>
-                    <a href="file:///C:/Users/USER/OneDrive/Documents/Resume.pdf" target="_blank">Download CV</a>
+                    <a href="My Resume.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -111,70 +111,20 @@
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Angular</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>React.Js</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>.Net Core</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Node.Js</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MongoDB</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mysql"></div>
+                    <div class="skills">
+                        <div class="skill">HTML</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">Angular</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">MySQL</div>
+                        <div class="skill">Git</div>
+                        <div class="skill">GitHub</div>
+                        <!-- Add more skills as needed -->
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -224,20 +174,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form #ngForm="ngForm" (ngSubmit)="submit(ngForm.value)" action="#">
+                    <form onsubmit="sendEmail(); reset(); return false;">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" ngModel  name="name" placeholder="Name" #Name required>
+                                <input type="text" ngModel  id="name" placeholder="Name" #Name required>
                             </div>
                             <div class="field email">
-                                <input type="email" ngModel name="email" placeholder="Email" required>
+                                <input type="email" ngModel id="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" ngModel name="subject" placeholder="Subject" required>
+                            <input type="text" ngModel id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" ngModel name="message"  rows="10"  placeholder="Message.." required></textarea>
+                            <textarea cols="30" ngModel id="message"  rows="10"  placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -252,7 +202,8 @@
     <footer>
          | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
     </footer>
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
     <script src="script.js"></script>
 </body>
 </html>

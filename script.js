@@ -118,29 +118,16 @@ $(document).ready(function(){
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Find the form element
-    const contactForm = document.getElementById('contactForm');
-  
-    // Function to handle form submission
-    function handleSubmit(event) {
-      event.preventDefault(); // Prevent the default form submission
-  
-      // Get form data
-      const formData = new FormData(contactForm);
-      const formValues = Object.fromEntries(formData.entries());
-  
-      // Here, you can perform actions with the form data
-      // For example, you can log it to the console
-      console.log('Form Data:', formValues);
-  
-      // You can perform other actions like sending the data to a server via fetch API, etc.
-  
-      // Reset the form after submission (optional)
-      contactForm.reset();
-    }
-  
-    // Add submit event listener to the form
-    contactForm.addEventListener('submit', handleSubmit);
-  });
+  function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "bharat009898@gmail.com",
+        Password : "22046D4490000FC5FFD580409CF26212650",
+        To : 'bharat009898@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : document.getElementById("subject").value,
+        Body : document.getElementById("message").value
+    }).then(
+      message => alert(message)
+    );
+  }
