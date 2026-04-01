@@ -1,250 +1,512 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharat Bhushan — Full Stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
 
-</head>
-<body>
-    <div class="scroll-up-btn">
-        <i class="bi bi-arrow-up-circle-fill"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#project" class="menu-btn">Projects</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+    <!-- Scroll Up -->
+    <a href="#home" class="scroll-up" id="scrollUp"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- NAV -->
+    <nav>
+      <div class="logo">BB<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="about-content">
-                <div class="home-content">
-                    <div class="column left">
-                        <div class="text-1">Hello, my name is</div>
-                        <div class="text-2">Bharat Bhushan</div>
-                        <div class="text-3">And I'm a <span class="typing">Full Stack Developer</span></div>
-                        <a href="#contact">Hire me</a>
-                    </div>
-                    <div class="column right">
-                        <!-- <img src="images/Dp1.jpeg" alt="" width="50px"> -->
-                    </div>
-                </div>
+    <!-- HERO -->
+    <div class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-tag fade-up">Available for work</div>
+            <h1 class="fade-up delay-1">
+              Bharat<br /><span class="highlight">Bhushan</span>
+            </h1>
+            <p class="hero-sub fade-up delay-2">
+              Full Stack Developer crafting scalable web applications with
+              <b>React.js</b>, <b>Next.js</b>, and <b>Laravel</b>. Currently at
+              Starreify Tech Solutions building CRM systems and enterprise
+              dashboards.
+            </p>
+            <div class="hero-btns fade-up delay-3">
+              <a href="#contact" class="btn-primary"
+                ><i class="bi bi-send"></i> Hire Me</a
+              >
+              <a
+                href="BHARAT_BHUSHAN RESUME.pdf"
+                target="_blank"
+                class="btn-outline"
+                ><i class="bi bi-download"></i> Download CV</a
+              >
             </div>
+          </div>
+          <div class="hero-visual fade-up delay-2">
+            <div class="code-card">
+              <div class="code-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div>
+                <span class="c-key">const</span>
+                <span class="c-val">developer</span> = {
+              </div>
+              <div>
+                &nbsp;&nbsp;<span class="c-key">name</span>:
+                <span class="c-str">"Bharat Bhushan"</span>,
+              </div>
+              <div>
+                &nbsp;&nbsp;<span class="c-key">role</span>:
+                <span class="c-str">"Full Stack Dev"</span>,
+              </div>
+              <div>&nbsp;&nbsp;<span class="c-key">stack</span>: [</div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"React"</span>,
+                <span class="c-str">"Laravel"</span>,
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Next.js"</span>,
+                <span class="c-str">"MySQL"</span>
+              </div>
+              <div>&nbsp;&nbsp;],</div>
+              <div>
+                &nbsp;&nbsp;<span class="c-key">status</span>:
+                <span class="c-val">available</span>
+                <span class="c-muted">✓</span>
+              </div>
+              <div>}</div>
+            </div>
+          </div>
         </div>
-    </section>
-    
-    
+      </div>
+    </div>
 
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/Profile.png" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Bharat Bhushan and I'm a <span class="-2">Full Stack Developer</span></div>
-                    <p>
-                    Skilled in <b>HTML, CSS, AngularJS, React.js, Node.js, .NET Core, SQL</b>. I specialize in crafting visually appealing and intuitive web applications for seamless user experiences. My expertise spans frontend development with HTML, CSS, and JavaScript frameworks like AngularJS and React.js, while on the backend, I architect robust solutions using .NET Core, Node.js, SQL, and MongoDB. I'm committed to staying updated with the latest technologies to deliver cutting-edge web solutions</p>
-                    <a href="Bharat Bhushan - Resume.pdf" target="_blank">
-                        <button class="continue-application">
-                            <div>
-                                <div class="pencil"></div>
-                                <div class="folder">
-                                    <div class="top">
-                                        <svg viewBox="0 0 24 27">
-                                            <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="paper"></div>
-                                </div>
-                            </div>
-                            Download CV
-                        </button>
-                    </a>
-                </div>
-            </div>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Who I am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <b>Results-oriented Full Stack Developer</b> with hands-on
+            experience building scalable, high-performance web applications. I
+            specialise in <b>React.js, Next.js, and PHP/Laravel</b> on both
+            sides of the stack.
+          </p>
+          <p>
+            My work spans enterprise-level CRM systems, dashboard applications,
+            and client-facing products — including a contribution to a project
+            for <b>Mercedes-Benz</b>. I care deeply about clean architecture,
+            REST API design, and responsive UI that just works.
+          </p>
+          <p>
+            Currently pursuing my <b>MCA at Baddi University</b> while working
+            full-time as a React.js Full Stack Developer at Starreify Tech
+            Solutions.
+          </p>
         </div>
-    </section>
-
-    <!-- services section start -->
-    <section class="services" id="project">
-        <div class="max-width">
-            <h2 class="title">My Project</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <a href="https://bharatkabir-todoapp.netlify.app/" target="_blank">
-                    <div class="box">
-                        <i class="bi bi-list-task" style="color: white;"></i>
-                        <Div style="color: white;" class="text">
-                            Todo-App
-                           </Div>
-                    </div>
-                </a>
-                </div>
-                <div class="card">
-                    <a href="https://clothe-it-store.netlify.app/" target="_blank">
-                    <div class="box">
-                        <i class="bi bi-cart-check" style="color: white;"></i>
-                        <div style="color: white;" class="text">E Commerce</div>
-                       
-                    </div>
-                </a>
-                </div>
-                <div class="card">
-                    <a href="https://bharatkabir.github.io/QR-Code-Generator/" target="_blank">
-                    <div class="box">
-                        <i class="bi bi-qr-code-scan" style="color: white;"></i>
-                        <div style="color: white;" class="text">QR-Code-Generator</div>
-                    </div>
-                </div>
-            </a>
-               </div>
+        <!-- Education -->
+        <div>
+          <div class="skill-group-label" style="margin-bottom: 24px">
+            Education
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">2024 – 2026</div>
+              <div class="timeline-title">Master of Computer Applications</div>
+              <div class="timeline-company">
+                Baddi University of Emerging Sciences & Technology
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>I possess a robust skill set in web development, excelling in HTML, CSS, and JavaScript. My expertise is crafting engaging and responsive user interfaces using modern frontend frameworks such as React.js and Angular. I am proficient in Node.js, specializing in developing scalable and sturdy backend architectures for web applications. My database management skills encompass  SQL, ensuring efficient data handling. Additionally, I have hands-on experience with Bootstrap and Tailwind CSS for styling, Firebase for backend services, and GitHub for version control. With this comprehensive skill set covering frontend, backend, and database technologies, I am adept at delivering end-to-end web solutions</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="skills">
-                        <div class="skill">
-                            <img  src="images/html-5.png" alt="">
-                        </div>
-                        <div class="skill">
-                            <img src="images/js.png" alt="">
-                        </div>
-                        <div class="skill">
-                            <img src="images/css-3.png" alt="">
-                        </div>
-                        <div class="skill">
-                            <img src="images/angularjs.svg" alt="">
-                        </div>
-                        <div class="skill">
-                            <img src="images/react.svg" alt="">
-                        </div>
-                        <div class="skill"><img src="images/file-type-node.svg" alt=""></div>
-                        <div class="skill">
-                            <img src="images/tailwind-css.svg" alt="">
-                        </div>
-                        <div class="skill">
-                            <img src="images/github-sign.png" alt="">
-                        </div>
-                        <div class="skill">
-                            <img src="images/firebase.svg" alt="">
-                        </div>
-                        <!-- Add more skills as needed -->
-                    </div>
-                </div>
-                
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">2020 – 2023</div>
+              <div class="timeline-title">
+                Bachelor of Computer Applications
+              </div>
+              <div class="timeline-company">
+                ICFAI University Himachal Pradesh
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- contact section start -->
-    <section class="contact" id="contact" style="background-color: black; color: white;">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/profile.php?id=100028057271462" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/invites/contact/?i=1v2bwmxvzplra&utm_content=j6z6z7w"target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://github.com/Bharatkabir" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/bharat-bhushan-891973263/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="bi bi-person-fill"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Bharat Bhushan</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Baddi , Himachal Pardesh</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="bi bi-telephone-plus-fill"></i>
-                            <div class="info">
-                                <div class="head">Phone</div>
-                                <div class="sub-title">9816658298</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="bi bi-envelope-fill"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">kabirbhushan098@gmail.com</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/myyrvybj" method="POST">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" name="Name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" name="Email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="Subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" name="Message" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button id="btn" type="submit">Submit</button>
-                        </div>
-                    </form>
-                    
-                </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">2023</div>
+              <div class="timeline-title">Full Stack Development Course</div>
+              <div class="timeline-company">Skillera Institute, Panchkula</div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- footer section start -->
+    <!-- EXPERIENCE -->
+    <section id="experience" style="padding-top: 0">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Where I've worked</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">Dec 2024 – Present</div>
+          <div class="timeline-title">React JS Full Stack Developer</div>
+          <div class="timeline-company">
+            Starreify Tech Solutions · Baddi, Himachal Pradesh
+          </div>
+          <ul class="timeline-points">
+            <li>
+              Building and maintaining full stack applications using React.js
+              and Laravel
+            </li>
+            <li>
+              Designing scalable architecture and reusable components for
+              production apps
+            </li>
+            <li>
+              Integrating REST APIs with secure frontend-backend data
+              communication
+            </li>
+            <li>
+              Developing CRM-based applications and enterprise dashboard systems
+            </li>
+            <li>
+              Improving application performance, responsiveness, and UI/UX
+            </li>
+            <li>
+              Collaborating cross-functionally to deliver business requirements
+              efficiently
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">Sep 2023 – Jan 2024</div>
+          <div class="timeline-title">Full Stack Developer</div>
+          <div class="timeline-company">Joenish Tech · Panchkula, Haryana</div>
+          <ul class="timeline-points">
+            <li>
+              Contributed to an enterprise-level project for
+              <b style="color: var(--text)">Mercedes-Benz</b>
+            </li>
+            <li>
+              Built responsive and dynamic UIs using Angular and JavaScript
+            </li>
+            <li>
+              Integrated APIs and handled backend logic with database operations
+            </li>
+            <li>
+              Followed agile development practices within a collaborative team
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" style="padding-top: 0">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've built</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <i class="bi bi-clipboard2-pulse project-icon"></i>
+          <div class="project-name">PharmaGrow CRM System</div>
+          <p class="project-desc">
+            A full-fledged CRM for managing healthcare and business workflows —
+            dynamic dashboards, RBAC authentication, role-based modules, and
+            optimised database queries.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">REST API</span>
+            <span class="tag">RBAC</span>
+          </div>
+        </div>
+
+        <a
+          href="https://clothe-it-store.netlify.app/"
+          target="_blank"
+          class="project-card"
+        >
+          <i class="bi bi-bag-check project-icon"></i>
+          <div class="project-name">Shop-It — E-Commerce App</div>
+          <p class="project-desc">
+            A complete e-commerce platform with cart functionality, product
+            variants, real-time database integration, user authentication, and
+            responsive UI.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <i class="bi bi-arrow-up-right project-link"></i>
+        </a>
+
+        <div class="project-card">
+          <i class="bi bi-layout-text-sidebar-reverse project-icon"></i>
+          <div class="project-name">Texonation Replica</div>
+          <p class="project-desc">
+            A client-based application replica with Angular, implementing
+            authentication, dynamic UI components, and improved usability with
+            Supabase as the backend.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+        <a
+          href="https://bharatkabir-todoapp.netlify.app/"
+          target="_blank"
+          class="project-card"
+        >
+          <i class="bi bi-list-check project-icon"></i>
+          <div class="project-name">Todo App</div>
+          <p class="project-desc">
+            A clean, functional task management app with a smooth user
+            experience, deployed on Netlify.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <i class="bi bi-arrow-up-right project-link"></i>
+        </a>
+
+        <a
+          href="https://bharatkabir.github.io/QR-Code-Generator/"
+          target="_blank"
+          class="project-card"
+        >
+          <i class="bi bi-qr-code-scan project-icon"></i>
+          <div class="project-name">QR Code Generator</div>
+          <p class="project-desc">
+            Instantly generate QR codes for any URL or text input. Lightweight,
+            fast, and deployed on GitHub Pages.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <i class="bi bi-arrow-up-right project-link"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" style="padding-top: 0">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <div class="skills-layout">
+        <div class="skills-intro">
+          <p>
+            I'm a full-stack generalist who's comfortable picking up either end
+            of the stack. My strongest area is frontend engineering with React
+            and Next.js, backed by Laravel APIs and MySQL on the server side.
+          </p>
+          <br />
+          <p>
+            I place a lot of emphasis on clean component architecture,
+            performant REST API design, role-based access patterns, and
+            responsive UIs that feel natural on any device.
+          </p>
+        </div>
+        <div class="skills-categories">
+          <div>
+            <div class="skill-group-label">Languages</div>
+            <div class="skill-pills">
+              <span class="skill-pill hot">JavaScript</span>
+              <span class="skill-pill hot">TypeScript</span>
+              <span class="skill-pill">PHP</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-label">Frontend</div>
+            <div class="skill-pills">
+              <span class="skill-pill hot">React.js</span>
+              <span class="skill-pill hot">Next.js</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">Bootstrap</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-label">Backend</div>
+            <div class="skill-pills">
+              <span class="skill-pill hot">Laravel</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">MVC</span>
+              <span class="skill-pill">Authentication</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-label">Database & Tools</div>
+            <div class="skill-pills">
+              <span class="skill-pill hot">MySQL</span>
+              <span class="skill-pill">Firebase</span>
+              <span class="skill-pill">Supabase</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-label">Concepts</div>
+            <div class="skill-pills">
+              <span class="skill-pill">CRUD</span>
+              <span class="skill-pill">RBAC</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="padding-top: 0">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's work together</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>
+            I'm currently open to new opportunities — full-time, freelance, or
+            collaborative projects. Drop me a message and I'll get back to you
+            promptly.
+          </p>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div class="contact-row-text">
+              <span>Phone</span>
+              <span>+91 9816658298</span>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="contact-row-text">
+              <span>Email</span>
+              <span>kabirbhushan098@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="contact-row-text">
+              <span>Location</span>
+              <span>Baddi, Himachal Pradesh</span>
+            </div>
+          </div>
+          <div class="social-row">
+            <a
+              href="https://github.com/Bharatkabir"
+              target="_blank"
+              class="social-btn"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/bharat-bhushan98/"
+              target="_blank"
+              class="social-btn"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/invites/contact/?i=1v2bwmxvzplra&utm_content=j6z6z7w"
+              target="_blank"
+              class="social-btn"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100028057271462"
+              target="_blank"
+              class="social-btn"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </div>
+        </div>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/myyrvybj"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-field">
+              <label>Name</label>
+              <input type="text" name="Name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label>Email</label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Subject</label>
+            <input
+              type="text"
+              name="Subject"
+              placeholder="What's this about?"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label>Message</label>
+            <textarea
+              name="Message"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="bi bi-send" style="margin-right: 8px"></i>Send Message
+          </button>
+        </form>
+        <div
+          id="successMessage"
+          style="display: none; color: #6ee7b7; margin-top: 20px"
+        >
+          ✅ Message sent successfully! I will get back to you soon.
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-         | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+      Designed & built by <span>Bharat Bhushan</span> · 2025 · All rights
+      reserved.
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
