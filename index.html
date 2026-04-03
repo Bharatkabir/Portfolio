@@ -20,13 +20,15 @@
     <div class="blob blob-2"></div>
 
     <!-- Scroll Up -->
-    <a href="#home" class="scroll-up" id="scrollUp"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+    <a href="#home" class="scroll-up" id="scrollUp">
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
     <!-- NAV -->
     <nav>
       <div class="logo">BB<span>.</span></div>
+
+      <!-- Desktop Links -->
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -35,7 +37,35 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <!-- Hamburger Button (mobile only) -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+
+    <!-- Mobile Fullscreen Menu -->
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-label="Navigation menu"
+    >
+      <a href="#home" class="mob-link">Home</a>
+      <a href="#about" class="mob-link">About</a>
+      <a href="#experience" class="mob-link">Experience</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#contact" class="mob-link">Contact</a>
+      <div class="mobile-menu-footer">kabirbhushan098@gmail.com</div>
+    </div>
 
     <!-- HERO -->
     <div class="hero" id="home">
@@ -53,15 +83,16 @@
               dashboards.
             </p>
             <div class="hero-btns fade-up delay-3">
-              <a href="#contact" class="btn-primary"
-                ><i class="bi bi-send"></i> Hire Me</a
-              >
+              <a href="#contact" class="btn-primary">
+                <i class="bi bi-send"></i> Hire Me
+              </a>
               <a
                 href="BHARAT_BHUSHAN RESUME.pdf"
                 target="_blank"
                 class="btn-outline"
-                ><i class="bi bi-download"></i> Download CV</a
               >
+                <i class="bi bi-download"></i> Download CV
+              </a>
             </div>
           </div>
           <div class="hero-visual fade-up delay-2">
@@ -127,7 +158,6 @@
             Solutions.
           </p>
         </div>
-        <!-- Education -->
         <div>
           <div class="skill-group-label" style="margin-bottom: 24px">
             Education
@@ -138,7 +168,7 @@
               <div class="timeline-meta">2024 – 2026</div>
               <div class="timeline-title">Master of Computer Applications</div>
               <div class="timeline-company">
-                Baddi University of Emerging Sciences & Technology
+                Baddi University of Emerging Sciences &amp; Technology
               </div>
             </div>
             <div class="timeline-item">
@@ -369,7 +399,7 @@
             </div>
           </div>
           <div>
-            <div class="skill-group-label">Database & Tools</div>
+            <div class="skill-group-label">Database &amp; Tools</div>
             <div class="skill-pills">
               <span class="skill-pill hot">MySQL</span>
               <span class="skill-pill">Firebase</span>
@@ -490,7 +520,7 @@
             ></textarea>
           </div>
           <button type="submit" class="submit-btn">
-            <i class="bi bi-send" style="margin-right: 8px"></i>Send Message
+            <i class="bi bi-send"></i> Send Message
           </button>
         </form>
         <div
@@ -504,7 +534,7 @@
 
     <!-- FOOTER -->
     <footer>
-      Designed & built by <span>Bharat Bhushan</span> · 2025 · All rights
+      Designed &amp; built by <span>Bharat Bhushan</span> · 2025 · All rights
       reserved.
     </footer>
     <script src="script.js"></script>
